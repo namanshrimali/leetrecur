@@ -160,9 +160,7 @@ footer .fa {
     text-decoration: none;
 }
 @media (max-width: 615px) {
-    nav {
-        justify-content: center;
-    }
+
     nav ul {
         display: none;
     }
