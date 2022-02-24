@@ -62,6 +62,7 @@ nav ul {
     display: flex;
     width: 480px;
     justify-content: space-evenly;
+    align-items: center;
 }
 nav li {
     display: inline;
