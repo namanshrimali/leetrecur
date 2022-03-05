@@ -81,6 +81,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 .header-headline h1 {
     font-size: 56px;
@@ -173,3 +174,19 @@ footer .fa {
     }
     
 }
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    outline: 1px solid ffffffb3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffffb3;
+  outline: 1px solid rgb(0, 0, 0);
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #90D6FF;
+  }
