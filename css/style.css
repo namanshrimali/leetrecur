@@ -75,7 +75,12 @@ nav ul {
     box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
 } */
 
-header {
+
+article h1, h2, h3 {
+   margin: 0px; 
+}
+
+.jumbotron {
     margin-top: 63px;
     height: 480px;
     width: 100%;
@@ -89,9 +94,15 @@ header {
     font-size: 56px;
     font-weight: 700;
     line-height: 56px;
-    margin: 15px 5px;
+    margin: 15px 0px;
 }
 .header-headline h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    margin: 15px 0px;
+}
+.header-headline p {
     font-size: 20px;
     font-weight: 300;
     line-height: 28px;
@@ -158,7 +169,7 @@ footer {
 }
 footer .fa {
     font-size: 20px;
-    width: 50px;
+    width: 48px;
     text-align: center;
     text-decoration: none;
 }
