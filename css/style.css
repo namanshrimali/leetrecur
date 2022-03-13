@@ -22,7 +22,9 @@ a {
 .dark-theme a:hover {
     color:  #90D6FF;
 }
-
+.mobile-only {
+    display: none;
+}
 .primary-background {
     color: #303030;
     background: #90D6FF;
@@ -50,18 +52,18 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
+    padding: 0px 16px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1;
+    box-sizing: border-box
 }
 nav ul {
     list-style-type: none;
-    margin: 0;
     display: flex;
-    width: 480px;
-    justify-content: space-evenly;
+    width: 420px;
+    justify-content: space-between;
     align-items: center;
 }
 nav li {
@@ -102,14 +104,13 @@ button {
     padding: 10px 16px;
     text-transform: capitalize;
     cursor: pointer;
-    display: inline-block;
+    /* display: inline-block; */
     border-radius: 5px;
     letter-spacing: 1px;
     transition: color 0.4s linear;
     position: relative;
     border: 0;
     overflow: hidden;
-    margin: 0;
 }
 
 main {
@@ -161,18 +162,21 @@ footer .fa {
     text-align: center;
     text-decoration: none;
 }
-@media (max-width: 615px) {
-
-    nav ul {
-        display: none;
-    }
+@media (max-width: 768px) {
     .flex-row {
         flex-direction: column;
     }
     .flex-col {
         width: 100%;
     }
-    
+}
+@media (max-width: 615px) {
+    nav ul {
+        display: none;
+    }
+    .mobile-only {
+        display: inline;
+    }
 }
 
 body::-webkit-scrollbar {
